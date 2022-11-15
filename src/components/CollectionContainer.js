@@ -1,9 +1,9 @@
 import WordCard from "./WordCard"
 
-const CollectionContainer = ({words}) => {
+const CollectionContainer = ({words, url, deleteWord}) => {
     const renderedWords = words.map((wordObj) => {
         return (
-            <WordCard key={wordObj.id} wordObj={wordObj} />
+            <WordCard key={wordObj.id} wordObj={wordObj} url={url} deleteWord={deleteWord} />
         )
     })
     

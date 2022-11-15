@@ -21,6 +21,11 @@ function App() {
 
   const [wordsData, setWordsData] = useState([])
 
+  const deleteWord = (id) => {
+    const updatedWords = wordsData.filter(word => word.id !== id)
+    setWordsData(updatedWords)
+  }
+
   const submitNewWord = (newWord) => {
     setWordsData([...wordsData, newWord])
   }
@@ -35,7 +40,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/words">
-          <CollectionContainer words={wordsData} />
+          <CollectionContainer words={wordsData} url={url} deleteWord={deleteWord}/>
         </Route>
         <Route path="/flashcards">
           <FlashcardContainer words={wordsData} />
