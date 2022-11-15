@@ -2,7 +2,7 @@ import {useState} from "react"
 import {useHistory} from "react-router-dom"
 
 const Form = ({url, submitNewWord}) => {
-    // const history = useHistory()
+    const history = useHistory()
     
     const [formData, setFormData] = useState({
         word: "",
@@ -24,7 +24,7 @@ const Form = ({url, submitNewWord}) => {
             .then(r => r.json())
             .then(
                 newWord => submitNewWord(newWord),
-                // history.push("/words")
+                history.push("/words")
             )
     }
 
