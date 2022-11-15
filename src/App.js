@@ -32,9 +32,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <header className="App-header"> */}
       <Header />
-      {/* </header> */}
       <Switch>
         <Route exact path="/">
           <Home />

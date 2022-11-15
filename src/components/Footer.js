@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <span>©2022 JaQuan Banks, Mae Schreck, & Martin Souza</span>
+        <footer>©2022 JaQuan Banks, Mae Schreck, & Martin Souza</footer>
     )
 }
 

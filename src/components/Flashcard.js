@@ -11,11 +11,11 @@ const Flashcard = ({wordObj}) => {
 
     return (
         showFront ? 
-        <div onClick={handleClick}>
+        <div className="flashcard-front" onClick={handleClick}>
             <h3>{word}</h3>
         </div>
         :
-        <div onClick={handleClick}>
+        <div className="flashcard-back" onClick={handleClick}>
             <p>{definition}</p>
         </div>   
     ) 

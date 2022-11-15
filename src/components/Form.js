@@ -37,7 +37,7 @@ const Form = ({url, submitNewWord}) => {
                 value={formData.word}
                 onChange={handleChange}
             />
-            <input
+            <textarea
                 type="text"
                 name="definition"
                 placeholder="Definition..."
