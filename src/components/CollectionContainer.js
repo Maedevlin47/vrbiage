@@ -1,6 +1,16 @@
-const CollectionContainer = () => {
+import WordCard from "./WordCard"
+
+const CollectionContainer = ({words}) => {
+    const renderedWords = words.map((wordObj) => {
+        return (
+            <WordCard key={wordObj.id} wordObj={wordObj} />
+        )
+    })
+    
     return (
-        <h2>Collection Container OINK</h2>
+        <div>
+            {renderedWords}
+        </div>
     )
 }
 

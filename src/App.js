@@ -1,5 +1,6 @@
 import './App.css';
 
+import {useState, useEffect} from "react"
 import {Switch, Route} from "react-router-dom"
 
 import Header from "./components/Header"
@@ -10,6 +11,20 @@ import FlashcardContainer from "./components/FlashcardContainer"
 import Form from "./components/Form"
 
 function App() {
+  const url = "http://localhost:9000/words"
+
+  useEffect(() => {
+    fetch(url)
+      .then(r => r.json())
+      .then(setWordsData)
+  }, [])
+
+  const [wordsData, setWordsData] = useState([])
+
+  const submitNewWord = (newWord) => {
+    setWordsData([...wordsData, newWord])
+  }
+
   return (
     <div className="App">
       {/* <header className="App-header"> */}
@@ -20,13 +35,13 @@ function App() {
           <Home />
         </Route>
         <Route path="/words">
-          <CollectionContainer />
+          <CollectionContainer words={wordsData} />
         </Route>
         <Route path="/flashcards">
-          <FlashcardContainer />
+          <FlashcardContainer words={wordsData} />
         </Route>
         <Route path="/new-word">
-          <Form />
+          <Form url={url} submitNewWord={submitNewWord}/>
         </Route>
       </Switch>
       <Footer />

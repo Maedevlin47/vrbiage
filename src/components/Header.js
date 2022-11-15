@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom"
 const Header = () => {
     return (
         <div className="header">
-            <Link to ="/">
+            <Link to ="/" style={{borderBottom: "none"}}>
                 <h1 id="maintitle">V r b i a g e</h1>
             </Link>
             <br/>

@@ -1,6 +1,16 @@
-const FlashcardContainer = () => {
+import Flashcard from "./Flashcard"
+
+const FlashcardContainer = ({words}) => {
+    const renderedFlashcards = words.map((wordObj) => {
+        return (
+            <Flashcard key={wordObj.id} wordObj={wordObj} />
+        )
+    })
+    
     return (
-        <h2>Flashcard Container OINK</h2>
+        <div>
+            {renderedFlashcards}
+        </div>
     )
 }
 
