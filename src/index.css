@@ -17,16 +17,17 @@ code {
   /* background-color: #2E4D5C; */
   overflow: auto;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+  justify-content: top;
+  text-align: center; 
   font-size: calc(10px + 2vmin);
   color: #E7F6F2;
   vertical-align: top;
-  background-image: linear-gradient(#97ACB7, #6B8999, #2E4D5C);
+  /* background-image: linear-gradient(#97ACB7, #6B8999, #2E4D5C); */
   font-family: 'Abel';
+  background-image: linear-gradient(#97ACB7, #6B8999, #2E4D5C);
 }
 
 .App-link {
@@ -35,16 +36,16 @@ code {
 
 #collection-container,
 #flashcard-container {
-  row-gap: 20px;
-  justify-content:space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: row; 
+  flex-wrap: wrap; 
   display: flex;
   width: 70%;
+  align-items: flex-start;
 }
 
 .word-card, .flashcard-front, .flashcard-back {
-  display: block;
   padding: 20px;
   border-radius: 20px;
   background-image: linear-gradient(#97ACB7, #6B8999, #2E4D5C);
@@ -59,8 +60,9 @@ code {
 }
 
 .word-card button {
-  position:-webkit-sticky;
-  bottom: 0;
+  background-color: green;
+  align-items: padding bottom;
+  bottom: 0px;
 }
 
 
@@ -92,6 +94,23 @@ border-radius: 10px;
   top: 10;
   height: auto;
   justify-content: center;
+ }
+
+ .nav-spacer {
+  padding: 20px;
+ }
+
+ form {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  
+ }
+
+ .submit-button {
+  width: 10%;
+  align-self: center;
  }
 
  /* #maintitle {

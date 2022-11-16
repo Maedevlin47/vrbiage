@@ -44,7 +44,7 @@ const Form = ({url, submitNewWord}) => {
                 value={formData.definition}
                 onChange={handleChange}
             />
-            <input type="submit" />
+            <input className="submit-button" type="submit" />
         </form>
     )
 }

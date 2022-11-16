@@ -12,7 +12,7 @@ const WordCard = ({wordObj, url, deleteWord}) => {
         <div className="word-card">
             <h3>{word}</h3>
             <p>{definition}</p>
-            <button onClick={handleDelete}>Delete Word</button>
+            <button className="delete-button" onClick={handleDelete}>Delete Word</button>
         </div>
     )
 }
