@@ -89,12 +89,6 @@ a:hover {
   text-align: left;
 }
 
-.word-card button {
-  background-color: green;
-  align-items: padding bottom;
-  bottom: 0px;
-}
-
 form {
   gap: 20px;
   display: flex;
@@ -103,7 +97,7 @@ form {
 }
 
 .submit-button {
-  width: 10%;
+  width: 25%;
   align-self: center;
 }
 

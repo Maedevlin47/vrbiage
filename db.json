@@ -9,6 +9,21 @@
       "id": 2,
       "word": "Basorexia",
       "definition": "An urge to kiss someone."
+    },
+    {
+      "word": "Eidolon",
+      "definition": "A phantom or dreamlike form.",
+      "id": 3
+    },
+    {
+      "word": "Hypnogogia",
+      "definition": "The transition state between wakefulness and sleep.",
+      "id": 4
+    },
+    {
+      "word": "Eigengrau",
+      "definition": "The neurologically generated shade of grey seen in the absence of light.",
+      "id": 5
     }
   ]
 }
