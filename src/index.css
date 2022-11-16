@@ -15,7 +15,7 @@ code {
 /* systle for homepage */
  .App {
   /* background-color: #2E4D5C; */
-  background-image: linear-gradient(#97ACB7, #6B8999, #2E4D5C);
+  overflow: auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,12 +25,45 @@ code {
   font-size: calc(10px + 2vmin);
   color: #E7F6F2;
   vertical-align: top;
-
+  background-image: linear-gradient(#97ACB7, #6B8999, #2E4D5C);
+  font-family: 'Abel';
 }
 
 .App-link {
   color: #61dafb;
 }
+
+#collection-container,
+#flashcard-container {
+  row-gap: 20px;
+  justify-content:space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  width: 70%;
+}
+
+.word-card, .flashcard-front, .flashcard-back {
+  display: block;
+  padding: 20px;
+  border-radius: 20px;
+  background-image: linear-gradient(#97ACB7, #6B8999, #2E4D5C);
+  box-sizing: flex;
+  border: 2px solid rgb(0, 0, 0);
+  width: 40%;
+}
+
+.word-card p {
+  text-align: left;
+
+}
+
+.word-card button {
+  position:-webkit-sticky;
+  bottom: 0;
+}
+
+
 
 a {
 color: #E7F6F2;
@@ -40,7 +73,7 @@ font-family: 'Allerta Stencil';
 }
 .nav-link { 
 font-size: 25px;
-
+border-radius: 10px;
 }
 
  a:hover {
@@ -51,20 +84,29 @@ font-size: 25px;
  .home-text {
   font-size: 20px;
   text-align: left;
-  font-family: 'Abel';
  }
  .header{
-  position: fixed;
-  top:0;
-  
+  margin: 20px;
+  text-align: center;
+  position: sticky;
+  top: 10;
+  height: auto;
+  justify-content: center;
  }
+
+ /* #maintitle {
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  margin: 0%;
+ } */
 
  /* footer styel */
  footer {
+  margin: 30px;
   font-size: 15px;
-  text-align: left;
   font-family: 'Abel';
   text-align: center;
-  position: fixed;
+  position: sticky;
   bottom: 0;
  }

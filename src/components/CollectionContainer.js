@@ -8,7 +8,7 @@ const CollectionContainer = ({words, url, deleteWord}) => {
     })
     
     return (
-        <div>
+        <div id="collection-container">
             {renderedWords}
         </div>
     )
