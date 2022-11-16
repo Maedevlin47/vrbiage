@@ -12,12 +12,10 @@ code {
     monospace;
 }
 
-/* .App {
-  text-align: center;
-} */
-
+/* systle for homepage */
  .App {
-  background-color: #000000;
+  /* background-color: #2E4D5C; */
+  background-image: linear-gradient(#97ACB7, #6B8999, #2E4D5C);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,10 +23,48 @@ code {
   justify-content: center;
   text-align: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #E7F6F2;
   vertical-align: top;
+
 }
 
 .App-link {
   color: #61dafb;
 }
+
+a {
+color: #E7F6F2;
+text-decoration: none;
+font-family: 'Allerta Stencil';
+
+}
+.nav-link { 
+font-size: 25px;
+
+}
+
+ a:hover {
+  color: #F07DEA;
+  transition: 0.8s;
+ }
+
+ .home-text {
+  font-size: 20px;
+  text-align: left;
+  font-family: 'Abel';
+ }
+ .header{
+  position: fixed;
+  top:0;
+  
+ }
+
+ /* footer styel */
+ footer {
+  font-size: 15px;
+  text-align: left;
+  font-family: 'Abel';
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+ }
