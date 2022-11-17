@@ -7,9 +7,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Neon text effect created by Matt Smith: https://allthingssmitty.com/ */
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px rgb(250, 113, 222),
+    0 0 80px rgb(250, 113, 222),
+    0 0 90px rgb(250, 113, 222),
+    0 0 100px rgb(250, 113, 222),
+    0 0 150px rgb(250, 113, 222);
 }
 
  .App {
@@ -41,7 +50,6 @@ a:hover {
 
 .nav-link { 
   font-size: 25px;
-  border-radius: 10px;
 }
 
 .header {
@@ -60,7 +68,7 @@ a:hover {
 .home-text {
   font-size: 20px;
   text-align: left;
-  width: 70%
+  width: 70%;
 }
 
 #collection-container,

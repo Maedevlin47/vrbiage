@@ -4,29 +4,26 @@ const Header = () => {
     return (
         <div className="header">
             <Link to ="/">
-                <h1 id="maintitle">V r b i a g e</h1>
+                <h1 id="maintitle" className="neon">V r b i a g e</h1>
             </Link>
             <br/>
             <NavLink
                 to="/words"
-                className="nav-link"
-                activeStyle={{background: "pink"}}
+                className={isActive => isActive ? "neon" : "nav-link"}
                 >
                     Words
             </NavLink>
             <span className="nav-spacer">|</span>
             <NavLink
                 to="/flashcards"
-                className="nav-link"
-                activeStyle={{background: "pink"}}
+                className={isActive => isActive ? "neon" : "nav-link"}
                 >
                     Flashcards
                 </NavLink>
             <span className="nav-spacer">|</span>
             <NavLink
                 to="/new-word"
-                className="nav-link"
-                activeStyle={{background: "pink"}}
+                className={isActive => isActive ? "neon" : "nav-link"}
                 >
                     Add Word
                 </NavLink>

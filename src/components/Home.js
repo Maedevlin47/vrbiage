@@ -6,7 +6,7 @@ const Home = () => {
                 to help you collect and practice words of interest.
             </p>
             <p>
-                You can view your collected words and their definitions on the Word page, or
+                You can view your collected words and their definitions on the Words page, or
                 practice with them as flashcards on the Flashcards page. Use the Add Word form
                 to add a new word to your collection.
             </p>
