@@ -91,6 +91,7 @@ a:hover {
   box-sizing: flex;
   border: 2px solid rgb(0, 0, 0);
   width: 40%;
+  box-shadow: 5px 5px 5px rgba(45, 40, 40, 0.9);
 }
 
 .word-card p {
